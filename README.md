@@ -1,6 +1,6 @@
 # LSTM for NOx Time Series Prediction
 
-[Subproject for Stockholm Environmental Institute](https://www.kth.se/profile/liang/page/green-transport-solutions-using-iot-sensors)
+Subproject for Stockholm Environmental Institute [(AQsensor: air quality and pollutants prediction of dynamic traffic using emerging IoT sensors)](https://www.kth.se/profile/liang/page/green-transport-solutions-using-iot-sensors)
 
 Supervisor: [Xiaoliang MA, KTH Royal Institute of Technology](https://www.kth.se/profile/liang)
 
@@ -17,7 +17,7 @@ The inputs only contains NOx concentration.
 
 - Inputs of Multivariate model
 
-Except the NOx data, the input also contains environmental data such as Difftemp, Global radiation, STD WD, STD WS, STD VertWind, Temp, WD and WS.
+Except the NOx data, the inputs also contains environmental data such as Difftemp, Global radiation, STD WD, STD WS, STD VertWind, Temp, WD and WS.
 
 ### Data Analysis & Processing
 
