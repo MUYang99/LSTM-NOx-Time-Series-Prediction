@@ -1,6 +1,8 @@
 # LSTM for NOx Time Series Prediction
 
-Supervisor: Xiaoliang Ma, KTH Royal Institute of Technology
+[Subproject for Stockholm Environmental Institute](https://www.kth.se/profile/liang/page/green-transport-solutions-using-iot-sensors)
+
+Supervisor: [Xiaoliang MA, KTH Royal Institute of Technology](https://www.kth.se/profile/liang)
 
 ## Task
 Developing and training LSTM model to predict the hourly NOx concentration data in Stockholm for next 3 days and evaluate the accuracy.
@@ -9,11 +11,11 @@ Developing and training LSTM model to predict the hourly NOx concentration data 
 
 ### Data Inputs
 
-**Univariate Model Inputs**
+-Inputs of Univariate Model
 
 The inputs only contains NOx concentration. 
 
-**Multivariate model Inputs**
+-Inputs of Multivariate model
 
 Except the NOx data, the input also contains environmental data such as Difftemp, Global radiation, STD WD, STD WS, STD VertWind, Temp, WD and WS.
 
@@ -49,7 +51,7 @@ Except the NOx data, the input also contains environmental data such as Difftemp
 
 
 ### Training
-Data from 2015.1.1 to 2015.12.31 as train, 2016.1.1 to 2016.1.3 as validation
+Data of 1.1-12.31, 2015 as train, 1.1-1.3, 2016 as validation
 
 ### Evaluation
 
