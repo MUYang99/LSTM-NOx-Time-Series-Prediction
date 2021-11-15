@@ -32,7 +32,7 @@ Except the NOx data, the inputs also contains environmental data such as Difftem
 
 | Model       | Notes |
 | ------------| ----- |
-| LSTM        | Keras |
+| LSTM        | keras |
 | Prophet     | fbprophet |
 | Xgboost     | xgboost |
 | ARIMA     | statsmodels |
@@ -45,7 +45,7 @@ Except the NOx data, the inputs also contains environmental data such as Difftem
 
 | Features | Notes |
 | -------- | ----- | 
-|   LSTM       |   Keras    |
+|   LSTM       |   keras    |
 | DecisionTree | sklearn |
 | Xgboost     | xgboost |
 
