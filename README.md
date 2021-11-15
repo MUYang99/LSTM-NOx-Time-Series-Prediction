@@ -1,67 +1,56 @@
 # LSTM for NOx Time Series Prediction
 
-Project for Stockholm Environment Institute.
-
 Supervisor: Xiaoliang Ma, KTH Royal Institute of Technology
-
 
 ## Task
 Developing and training LSTM model to predict the hourly NOx concentration data in Stockholm for next 3 days and evaluate the accuracy.
 
-**Univariate Model**
-
-The input only contains NOx concentration. 
-
-**Multivariate model**
-Except the NOx data, 
-
-For evaluation, each group must create a **confusion matrix** to capture correct and incorrect classifications. The confusion matrix should be used to quantify the performance of the model using appropriate metrics.
-
 ## Methodology & Procedure
 
-### Feature Extraction
+### Data Inputs
 
-#### Spectral Features
+**Univariate Model Inputs**
 
-| Features       | Notes | Code Link? |
-| -------------- | ----- | ---------- |
-| R,G,B,NIR |   Raw Intensities    |            |
-|       CI1, CI2         |   Cloud    |            |
-|     MSVI, VARI, NDVI           |   Vegetation    |            |
+The inputs only contains NOx concentration. 
 
-#### Texture Features
+**Multivariate model Inputs**
 
-| Features | Notes | Code Link? |
-| -------- | ----- | ---------- |
-|   LBP       |       |            |
-|   GLCM       |       |            |
+Except the NOx data, the input also contains environmental data such as Difftemp, Global radiation, STD WD, STD WS, STD VertWind, Temp, WD and WS.
 
+### Data Analysis & Processing
 
-#### About Background & No Data
+- Time lag acf & pacf, FFT
+- Outliers detection: Density curve, Box-plot
+- Drop nan
+- Data normalization
 
-Mask out no data
+### Models Construction
 
-### Classifier
-- Random Prediction
-- Naive Bayes
-- Logistic Regression
-- Linear SVM
-- XGBoost
+#### Univariate Model
 
-### Evaluation Metrics
+| Model       | Notes |
+| ------------| ----- |
+| LSTM        | Keras |
+| Prophet     | fbprophet |
+| Xgboost     | xgboost |
+| ARIMA     | statsmodels |
+| SVM     | sklearn |
+| KNN     | sklearn |
+| Bayes     | sklearn |
+| DecisionTree     | sklearn |
 
-- Confusion Matrices
-- f1
-- recall
-- precision
+#### Multivariate model
+
+| Features | Notes |
+| -------- | ----- | 
+|   LSTM       |   Keras    |
+| DecisionTree | sklearn |
+| Xgboost     | xgboost |
 
 
 ### Training
-- First 60 images as train, last 4 images as validation
+Data from 2015.1.1 to 2015.12.31 as train, 2016.1.1 to 2016.1.3 as validation
 
-### Results analysis
-- EDA
-- Feature Selection
-- Plot metrics
-- Plot confusion matrix
-- Visualize prediction
+### Evaluation
+
+The prediction and the ground truth of next 3 days are visualized in a figure, and RMSE, MAE, MAPE, MedAE, r2_score and explained_variance_score are used for evaluation
