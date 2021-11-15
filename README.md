@@ -11,11 +11,11 @@ Developing and training LSTM model to predict the hourly NOx concentration data 
 
 ### Data Inputs
 
--Inputs of Univariate Model
+- Inputs of Univariate Model
 
 The inputs only contains NOx concentration. 
 
--Inputs of Multivariate model
+- Inputs of Multivariate model
 
 Except the NOx data, the input also contains environmental data such as Difftemp, Global radiation, STD WD, STD WS, STD VertWind, Temp, WD and WS.
 
@@ -51,7 +51,7 @@ Except the NOx data, the input also contains environmental data such as Difftemp
 
 
 ### Training
-Data of 1.1-12.31, 2015 as train, 1.1-1.3, 2016 as validation
+Data of 1.1-12.31/2015 as train, 1.1-1.3/2016 as validation
 
 ### Evaluation
 
