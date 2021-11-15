@@ -5,7 +5,7 @@ Subproject for Stockholm Environmental Institute [(AQsensor: air quality and pol
 Supervisor: [Xiaoliang MA, KTH Royal Institute of Technology](https://www.kth.se/profile/liang)
 
 ## Task
-Developing and training LSTM model to predict the hourly NOx concentration data in Stockholm for next 3 days and evaluate the accuracy.
+Developing and training LSTM model to predict the hourly NOx concentration data in Stockholm for next 3 days and evaluate the accuracy compared with other models.
 
 ## Methodology & Procedure
 
