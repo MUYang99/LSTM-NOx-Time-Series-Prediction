@@ -2,8 +2,7 @@
 
 Subproject for Stockholm Environmental Institute [(AQsensor: air quality and pollutants prediction of dynamic traffic using emerging IoT sensors)](https://www.kth.se/profile/liang/page/green-transport-solutions-using-iot-sensors)
 
-Supervisor: [Xiaoliang MA, KTH Royal Institute of Technology](https://www.kth.se/profile/liang)
-
+Supervisor: [Xiaoliang MA](https://www.kth.se/profile/liang), KTH Royal Institute of Technology
 ## Task
 Develop and train LSTM model to predict the hourly NOx concentration data in Stockholm for the next 3 days and evaluate the accuracy compared with other models.
 
